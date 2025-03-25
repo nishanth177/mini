@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: #9d5656;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1100px;
+        }
+
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        header nav a:hover {
+            color: #e74c3c;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1400x600') no-repeat center center/cover;
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 60px 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .product-card h3 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            color: #e74c3c;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .product-card button:hover {
+            background: #2980b9;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: #f1f1f1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .testimonial-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .testimonial {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        .testimonial p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .testimonial h4 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #e74c3c;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonial-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>Fashion Store</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div>
+        <h2>Discover Your Style</h2>
+        <p>Exclusive fashion trends at unbeatable prices.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="products" id="products">
+    <div class="container">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="ll" alt="Product 1">
+                <h3>Classic Jacket</h3>
+                <p>$120</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="1111_cac9d3f3-518e-41b5-94ae-38715381b899_1024x1024.webp" alt="Product 2">
+                <h3>Summer Dress</h3>
+                <p>$80</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="17-52-16-40-1.jpg" alt="Product 3">
+                <h3>Casual Sneakers</h3>
+                <p>$95</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="36_1.webp" alt="Product 4">
+                <h3>Leather Boots</h3>
+                <p>$150</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+
+            <div class="testimonial">
+                <p>"The quality is amazing! Will definitely shop again."</p>
+                <h4>- Sarah K.</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Great prices and fast delivery. Highly recommended!"</p>
+                <h4>- Mike L.</h4>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+    <div class="container">
+        <p>© 2025 Fashion Store | Follow us on:</p>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>
